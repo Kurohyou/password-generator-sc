@@ -1,31 +1,4 @@
 <!-- Adapted from Readme Template at https://github.com/othneildrew/Best-README-Template -->
-<style>
-@import url('https://fonts.googleapis.com/css?family=Material+Icons&display=swap');
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-</style>
 <div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -92,6 +65,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#acceptance-criteria">Acceptance Criteria</a></li>
       </ul>
     </li>
     <li>
@@ -108,28 +82,48 @@
 This is an on demand password generator. It creates passwords that meet a variety of requirements and each password generation is customizable to meet a different set of requirements.
 [![Product Name Screen Shot][product-screenshot]][product-screenshot]
 
-<p align="right"><a class='material-icons' style="color:black;" href="#top">vertical_align_top</a></p>
+<p align="right">(<a style="color:black;" href="#top">Back to Top</a>)</p>
 
 ### Built With
 * JS
 * HTML
 * CSS
 
-<p align="right"><a class='material-icons' style="color:black;" href="#top">vertical_align_top</a></p>
+<p align="right">(<a style="color:black;" href="#top">Back to Top</a>)</p>
+
+### Acceptance Criteria
+```
+GIVEN I need a new, secure password X
+WHEN I click the button to generate a password X
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria X
+THEN I select which criteria to include in the password X
+WHEN prompted for the length of the password X
+THEN I choose a length of at least 8 characters and no more than 128 characters X
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters X
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected X
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria X
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page X
+```
+<p align="right">(<a style="color:black;" href="#top">Back to Top</a>)</p>
 
 <!-- Using the Generator -->
 ## Using the Generator
 
 Simply visit the deployed site and click the `Generate Password` button to be prompted for your password criteria. The generated password will be placed in the textarea above the button. Click it to copy it.
 
-<p align="right"><a class='material-icons' style="color:black;" href="#top">vertical_align_top</a></p>
+<p align="right">(<a style="color:black;" href="#top">Back to Top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [LICENSE.txt][license-url] for more information.
 
-<p align="right"><a class='material-icons' style="color:black;" href="#top">vertical_align_top</a></p>
+<p align="right">(<a style="color:black;" href="#top">Back to Top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -139,7 +133,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * [Christoph Scholz for the original logo image](https://www.flickr.com/photos/140988606@N08/28124222664)
 * [Xander Rapstine For the original code](https://github.com/coding-boot-camp/friendly-parakeet)
 
-<p align="right"><a class='material-icons' style="color:black;" href="#top">vertical_align_top</a></p>
+<p align="right">(<a style="color:black;" href="#top">Back to Top</a>)</p>
 
 
 

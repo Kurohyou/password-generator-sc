@@ -17,18 +17,50 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+          <button id="pwcopy" class="no-btn">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+            <span id="copy-alert">Click to copy the password</span>
+          </button>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="setup" class="btn">Setup Password Criteria</button>
         </div>
       </div>
+      <section id="password-criteria" class="card">
+        <span>
+          <label for="characters">Password Length: </label>
+          <input id="characters" type="number" min="8" max="128" name="characters" value="8">
+        </span>
+        <h2 style="text-align:center;" class="span-all">Character Criteria</h2>
+        <span>
+          <label for="lowercase">Use lowercase letters:</label>
+          <input id="lowercase" type="checkbox" value="1" name="lowercase" checked>
+        </span>
+        <span>
+          <label for="uppercase">Use uppercase letters:</label>
+          <input id="uppercase" type="checkbox" value="1" name="uppercase" checked>
+        </span>
+        <span>
+          <label for="number">Use numbers:</label>
+          <input id="number" type="checkbox" value="1" name="number" checked>
+        </span>
+        <span class="span-all">
+          <label for="special-characters">Valid Special Characters: </label>
+          <input size="32" id="special-characters" type="text" name="special-characters" value="!&quot;#$%&’()*+,-./:;<=>?@[\]^_`{|}~">
+          <span id="special-error" style="display:none;"></span>
+        </span>
+        <span class="span-all">
+          <label for="special-all">Use any special characters:</label>
+          <input id="special-all" type="checkbox" value="1" name="special-all" checked>
+        </span>
+        <button id="generate" class="btn">Generate Password</button>
+      </section>
     </div>
-    <script src="assetcs/scripts/script.js"></script>
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>
